@@ -1,0 +1,55 @@
+.banner {
+    margin-top: 25px;
+    min-height: 439px;
+    display: flex;
+    align-items: center;
+    padding: 0 5vw;
+    background-image:
+        url('./icons/Gamepad.svg'),
+        linear-gradient(to right, #672870 20%, #4fe0ff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right center, left top;
+    background-size: auto 100%, cover;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-texts-and-btn {
+    max-width: 700px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Tenor Sans', sans-serif;
+    gap: 24px;
+}
+
+.text1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.text2 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.button-catalog {
+    width: fit-content;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #672870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-catalog:hover {
+    background-color: #eee;
+}
