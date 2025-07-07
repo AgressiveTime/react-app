@@ -1,0 +1,76 @@
+.smartphones-gadgets-content {
+    display: flex;
+    justify-content: space-between;
+    width: 428px;
+    height: 376px;
+    box-sizing: border-box;
+}
+
+.smartphones {
+    width: 217px;
+    height: 376px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.gadgets {
+    width: 171px;
+    height: 376px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.s, .g {
+    font-size: 30px;
+    color: #343A3F;
+}
+
+.s-list {
+    height: 308px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.g-list {
+    height: 272px;
+    margin-top: 32.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    height: 20px;
+    cursor: default;
+    align-content: center;
+}
+
+.i1 {
+    color: #343A3F;
+    transition: color 0.3s ease;
+}
+
+.i2 {
+    color: #343A3F;
+    opacity: 0.5;
+    margin-left: 5px;
+    padding-top: 3px;
+    font-size: 13px;
+    transition: color 0s ease;
+}
+
+.i3 {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: color 0.3s ease;
+}
+
+.item:hover :is(.i1, .i2, .right-icon) {
+    color: #4888FF;
+}
