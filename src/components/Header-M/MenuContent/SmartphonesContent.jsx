@@ -82,7 +82,6 @@ const SmartphonesGadgetsContent = () => {
                     <div className='i i1'>Для блогеров</div>
                     <div className='i i2'>32</div>
                 </div>
-
             </div>
         </div>
     </div>

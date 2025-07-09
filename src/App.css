@@ -1,6 +1,6 @@
 .App {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100%;
     background-color: rgb(255, 255, 255);
+    transform-origin: center center;
 }

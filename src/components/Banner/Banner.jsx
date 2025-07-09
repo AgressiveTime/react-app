@@ -1,8 +1,12 @@
 // Banner.jsx
 import React from 'react'
 import './Banner.css'
+import { useMenu } from '../MenuContext'
 
 function Banner() {
+  
+  const { toggleMenu } = useMenu();
+
   return (
     <div className='banner'>
         <div className='banner-texts-and-btn'>
@@ -12,13 +16,12 @@ function Banner() {
                 поднимайся на новый уровень мастерства! С нашей поддержкой<br/>
                 каждое твое действие станет частью великого искусства, а победы —<br/>
                 результатом точного плана и безупречной подготовки!</div>
-            <div className='button-catalog'>
+            <div className='button-catalog' onClick={toggleMenu}>
                 <div className='text3'>В каталог</div>
             </div>
         </div>
     </div>
   )
-
 }
 
 export default Banner;

@@ -1,22 +1,24 @@
 .banner {
-    margin-top: 25px;
+    width: 100%;
     min-height: 439px;
+    margin: 1.6rem auto 0 auto;
     display: flex;
     align-items: center;
-    padding: 0 5vw;
+    padding: 0 clamp(16px, 5vw, 60px);
+    box-sizing: border-box;
+    overflow: hidden;
     background-image:
         url('./icons/Gamepad.svg'),
         linear-gradient(to right, #672870 20%, #4fe0ff 100%);
     background-repeat: no-repeat, no-repeat;
     background-position: right center, left top;
-    background-size: auto 100%, cover;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: auto 60% cover;
 }
 
 .banner-texts-and-btn {
-    max-width: 700px;
+    max-width: min(729px, 90%);
+    max-width: 729px;
+    margin-left: 1%;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -26,12 +28,13 @@
 }
 
 .text1 {
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 4vw, 2rem);
     line-height: 1.2;
+    word-break: keep-all;
 }
 
 .text2 {
-    font-size: 1.125rem;
+    font-size: clamp(0.9rem, 2vw, 1.125rem);
     line-height: 1.5;
 }
 
@@ -47,9 +50,9 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: opacity 0.3s;
 }
 
 .button-catalog:hover {
-    background-color: #eee;
+    opacity: 0.8;
 }

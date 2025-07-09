@@ -1,0 +1,52 @@
+.to-whom-content {
+    width: 175px;
+    height: 269px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.to-whom {
+    display: flex;
+    flex-direction: column;
+    height: 269px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.t-w-list {
+    width: 175px;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.t-w {
+    font-size: 30px;
+}
+
+.t-w-item {
+    display: flex;
+    height: 20px;
+    cursor: default;
+    align-content: center;
+}
+
+.t-w-i1 {
+    color: #343A3F;
+    transition: color 0.3s ease;
+}
+
+.t-w-i2 {
+    color: #343A3F;
+    opacity: 0.5;
+    margin-left: 5px;
+    padding-top: 3px;
+    font-size: 13px;
+    transition: color 0s ease;
+}
+
+.t-w-item:hover :is(.t-w-i1, .t-w-i2) {
+    color: #4888FF;
+}
